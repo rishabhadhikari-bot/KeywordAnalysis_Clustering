@@ -1,0 +1,22 @@
+streamlit>=1.36
+pandas>=2.0
+plotly>=5.20
+spacy>=3.7
+scikit-learn>=1.9
+rapidfuzz>=3.14
+keybert>=0.9
+sentence-transformers>=3.0
+gliner>=0.2,<0.3
+sentencepiece==0.2.0; platform_system == "Windows"
+onnxruntime>=1.23,<1.24; platform_system == "Windows"
+msvc-runtime; platform_system == "Windows"
+bertopic>=0.17,<0.18
+torch>=2.0
+numpy>=1.26
+faiss-cpu>=1.8
+wordcloud>=1.9
+google-auth>=2.30
+requests>=2.32
+nltk>=3.9
+python-dotenv>=1.0
+https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl

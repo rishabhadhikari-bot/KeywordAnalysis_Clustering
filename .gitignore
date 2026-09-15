@@ -1,0 +1,22 @@
+service_account.json
+.env
+__pycache__/
+*.pyc
+*.log
+.venv/
+.tmp/
+.test_tmp/
+data/knowledge_sources/*.db
+data/nltk_data/
+
+data/wikidata/*.sqlite3*
+
+# Local datasets, secrets, and generated runtime artifacts
+.env.*
+!.env.opensearch.example
+.streamlit/secrets.toml
+/*.csv
+/*.db
+/*.db-*
+/data/
+.pytest_cache/

@@ -16,7 +16,7 @@ The required CSV datasets are included in the repository root:
 - `StoryID-Category.csv`, `StoryID-WordCount.csv`, `StoryID-Region_withViews.csv`,
   `StoryID-planned_trending.csv`, and `StoryID- AudienceType.csv` for the corresponding metadata features.
 
-Replace the included CSV files with updated exports as needed. Credentials and generated indexes/caches are not included in this repository.
+Replace the included CSV files with updated exports as needed. A Wikidata cache snapshot is also included (see below). Credentials and other generated indexes/caches are not included in this repository.
 
 For OpenSearch features, copy `.env.opensearch.example` to `.env` and start the local service:
 
@@ -35,6 +35,16 @@ Alternatively, on Windows with a native OpenSearch installation:
 The native launcher uses the repository's `.venv` and launches `app2.py`.
 Vertex AI features require your own `service_account.json` and configured Google Cloud access.
 Embedding and NLP features may download models on first use; generated artifacts are stored locally under `data/`.
+
+## Bundled Wikidata database
+
+`data/wikidata/entities.sqlite3` contains a snapshot of the local Wikidata cache,
+including entity records and cached identity/query lookups. The app uses this path
+by default. It is a cached subset of Wikidata, not a complete Wikidata dump.
+
+The app can update this database through the Wikidata API. Set `WIKIDATA_LOCAL_DB`
+to use another database path. SQLite journal files and other generated databases
+remain excluded from Git.
 
 ## Tests
 

@@ -18,7 +18,7 @@ data/wikidata/*.sqlite3*
 /*.csv
 /*.db
 /*.db-*
-/data/
+/data/*
 .pytest_cache/
 
 # Input datasets required by app2.py
@@ -29,3 +29,8 @@ data/wikidata/*.sqlite3*
 !/StoryID-Region_withViews.csv
 !/StoryID-planned_trending.csv
 !/StoryID- AudienceType.csv
+
+# Bundled Wikidata database snapshot
+!/data/wikidata/
+/data/wikidata/*
+!/data/wikidata/entities.sqlite3

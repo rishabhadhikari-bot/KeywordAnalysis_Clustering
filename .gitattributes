@@ -1,2 +1,5 @@
 # Preserve input dataset bytes across operating systems.
 *.csv -text
+
+# SQLite database snapshots are binary files.
+*.sqlite3 binary

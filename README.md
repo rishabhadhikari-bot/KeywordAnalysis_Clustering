@@ -10,13 +10,13 @@ python -m venv .venv
 python -m pip install -r requirements.txt
 ```
 
-Place your local data exports in the repository root:
+The required CSV datasets are included in the repository root:
 
 - `PageTitle2026.csv` and `Stories2026.csv` for title and traffic analysis.
 - `StoryID-Category.csv`, `StoryID-WordCount.csv`, `StoryID-Region_withViews.csv`,
   `StoryID-planned_trending.csv`, and `StoryID- AudienceType.csv` for the corresponding metadata features.
 
-Datasets, credentials, and generated indexes/caches are not included in this repository.
+Replace the included CSV files with updated exports as needed. Credentials and generated indexes/caches are not included in this repository.
 
 For OpenSearch features, copy `.env.opensearch.example` to `.env` and start the local service:
 

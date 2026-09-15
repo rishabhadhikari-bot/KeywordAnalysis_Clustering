@@ -1,0 +1,2 @@
+# Preserve input dataset bytes across operating systems.
+*.csv -text

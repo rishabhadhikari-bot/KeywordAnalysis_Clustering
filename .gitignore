@@ -20,3 +20,12 @@ data/wikidata/*.sqlite3*
 /*.db-*
 /data/
 .pytest_cache/
+
+# Input datasets required by app2.py
+!/PageTitle2026.csv
+!/Stories2026.csv
+!/StoryID-Category.csv
+!/StoryID-WordCount.csv
+!/StoryID-Region_withViews.csv
+!/StoryID-planned_trending.csv
+!/StoryID- AudienceType.csv
